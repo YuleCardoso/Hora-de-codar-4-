@@ -1,0 +1,29 @@
+<html>
+
+<head>
+
+	<script>
+		const estudantes = [];
+
+while (true) {
+    let nome = prompt("Digite o nome do estudante (ou 'PARE' para encerrar): ");
+    
+    if (nome.toUpperCase() === 'PARE') {
+        break;
+    }
+    
+    estudantes.push(nome);
+}
+
+const quantidadeEstudantes = estudantes.length;
+
+alert(`Quantidade de estudantes cadastrados: ${quantidadeEstudantes}\nLista de estudantes cadastrados:\n${estudantes.join("\n")}`);
+
+	</script>
+</head>
+
+<body>
+
+</body>
+
+</html>
